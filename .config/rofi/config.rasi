@@ -1,0 +1,4 @@
+@theme "/usr/share/rofi/themes/arthur.rasi"
+configuration {
+font: "FiraCode Nerd Font 20";
+ }
