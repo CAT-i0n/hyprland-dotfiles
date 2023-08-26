@@ -4,10 +4,12 @@
     "margin-left": 5,
     "margin-bottom": 0,
     "margin-right": 5,
+    "layer": "top",
     "spacing": 3, // Gaps between modules (4px)
-    //"modules-left": ["custom/launcher", "cpu", "memory", "wlr/workspaces", "custom/weather", "tray",],
     "modules-left": ["custom/launcher", "cpu", "memory", "wlr/workspaces", "custom/weather"],
-    "modules-right": ["mpris", "cava", "wireplumber", "network", "backlight",  "battery", "clock", "custom/power-menu"],
+    //"modules-left": ["custom/launcher", "cpu", "memory", "wlr/workspaces", "custom/weather"],
+     "modules-center": ["mpris", "cava"],
+    "modules-right": ["tray", "wireplumber", "network", "backlight",  "battery", "clock", "custom/power-menu"],
     "wlr/workspaces": {
       "format": "{name} {icon}",
       "on-click": "activate",
@@ -67,7 +69,8 @@
         "sleep_timer" : 10, 
         "bars": 16,
         "input_delay": 2,
-        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
+        "noise_reduction" : 0.5,
+        "format-icons" : [" ", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
     },
     "backlight": {
         "device": "DP-1",
@@ -99,10 +102,10 @@
         "on-click": "pavucontrol"
     },
 
-    "bluetooth": {
-        "on-click": "~/.config/waybar/scripts/rofi-bluetooth &",
-        "format": " {status}",
-    },
+    // "bluetooth": {
+    //     "on-click": "~/.config/waybar/scripts/rofi-bluetooth &",
+    //     "format": " {status}",
+    // },
 
     "battery": {
       "bat": "BAT1",
@@ -123,10 +126,10 @@
       "format-icons": [" ", " ", " ", " ", " "],
     },
 
-    "custom/power-menu": {
-        "format": " <span> </span>",
-        "on-click": "bash ~/.config/waybar/scripts/powermenu.sh",
-    }, 
+    // "custom/power-menu": {
+    //     "format": " <span> </span>",
+    //     "on-click": "bash ~/.config/waybar/scripts/powermenu.sh",
+    // }, 
     "custom/launcher": {
         "format": "<span >󰣇</span>",
         "on-click": "rofi -show drun",
