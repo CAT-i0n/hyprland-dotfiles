@@ -1,4 +1,14 @@
-@theme "/usr/share/rofi/themes/arthur.rasi"
-configuration {
-font: "FiraCode Nerd Font 20";
- }
+configuration{
+    modi: ["drun", "window", "run"];
+    icon-theme: "Papirus-Dark";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    sidebar-mode: false;
+    display-drun: " ";
+    display-run: " ";
+    display-window: " ";
+}
+@theme "~/.config/rofi/tokyonight.rasi"
