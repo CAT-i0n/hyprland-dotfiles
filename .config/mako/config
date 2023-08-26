@@ -7,24 +7,24 @@ format=%a\n<b>%s</b>\n%b
 sort=-time
 layer=overlay
 anchor=top-right
-background-color=#1f2530CC
+background-color=#1f302CCC
 width=300
 height=110
 margin=15
 padding=0,5,10
-border-size=1
-border-color=#08008c
+border-size=2
+border-color=#19f750
 border-radius=5
 icons=1
 max-icon-size=64
 default-timeout=5000
 ignore-timeout=1
 
-[urgency=normal]
-border-color=#08008c
+# [urgency=normal]
+# border-color=#008C83
 
-[urgency=high]
-border-color=#08008c
+# [urgency=high]
+# border-color=#008C83
 
 
 
