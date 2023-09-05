@@ -6,11 +6,10 @@
     "margin-right": 5,
     "layer": "top",
     "spacing": 3, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "wlr/workspaces", "custom/weather"],
-    //"modules-left": ["custom/launcher", "cpu", "memory", "wlr/workspaces", "custom/weather"],
-     "modules-center": ["mpris", "cava"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
+    "modules-center": ["mpris", "cava"],
     "modules-right": ["tray", "wireplumber", "network", "backlight",  "battery", "clock", "custom/power-menu"],
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
       "format": "{name} {icon}",
       "on-click": "activate",
       "format-icons": {
@@ -67,7 +66,7 @@
         "cava_config": "/home/cati0n/.config/cava/config",
         "bar_delimiter": 0,
         "sleep_timer" : 10, 
-        "bars": 16,
+        "bars": 14,
         "input_delay": 2,
         "noise_reduction" : 0.5,
         "format-icons" : [" ", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
