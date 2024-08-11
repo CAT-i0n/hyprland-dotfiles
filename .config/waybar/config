@@ -4,30 +4,48 @@
     "margin-left": 5,
     "margin-bottom": 0,
     "margin-right": 5,
+    "position" : "top",
     "layer": "top",
     "spacing": 3, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
-    "modules-center": ["mpris", "cava"],
-    "modules-right": ["tray", "wireplumber", "network", "backlight",  "battery", "clock", "custom/power-menu"],
+    "modules-left": [
+        "custom/launcher",
+        "cpu",
+        "memory",
+        "hyprland/workspaces",
+        "custom/weather"
+    ],
+    "modules-center": [
+        "mpris",
+        "cava"
+    ],
+    "modules-right": [
+        "tray",
+        "wireplumber",
+        "network",
+        "backlight",
+        "battery",
+        "clock",
+        "custom/power-menu"
+    ],
     "hyprland/workspaces": {
-      "format": "{name} {icon}",
-      "on-click": "activate",
-      "format-icons": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        "6": "",
-        "7": "",
-        "8": "",
-        "9": "",
-        "10": "",
-        "urgent": " ",
-        "active": "󰪥 ",
-        "default": "󰪥 ",
-      },
-    "sort-by-number" : true
+        "format": "{name} {icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": "",
+            "urgent": " ",
+            "active": "󰪥 ",
+            "default": "󰪥 ",
+        },
+        "sort-by-number": true
     },
     "hyprland/window": {
         "format": "{}"
@@ -37,18 +55,36 @@
     },
     "clock": {
         "format": "<span color='#bf616a'></span>{:%H:%M %b %d}",
-        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "locale": "en_GB.UTF-8",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "left",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#71d9a7'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>{}</b></span>",
+                "weekdays": "<span color='#7a57f8'><b>{}</b></span>",
+                "today": "<span color='#ffffff'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
-
     "cpu": {
-      "interval": 10,
-      "format":"<span>󰍛 </span>{usage}%",
-      "on-click": "",
+        "interval": 10,
+        "format": "<span>󰍛 </span>{usage}%",
+        "on-click": "",
     },
     "memory": {
         "interval": 10,
         "format": " {percentage}%",
-        "format-alt":" {used:0.1f}G",
+        "format-alt": " {used:0.1f}G",
     },
     "mpris": {
         "format": "{player_icon} {artist} - {title}",
@@ -63,22 +99,22 @@
         },
         "status-icons": {
             "paused": "🎵",
-        },
-        // "ignored-players": ["firefox"]
-    },
-    "cava": {
-        "cava_config": "/home/cati0n/.config/cava/config",
-        "bar_delimiter": 0,
-        "sleep_timer" : 10, 
-        "bars": 14,
-        "input_delay": 2,
-        "noise_reduction" : 0.5,
-        "format-icons" : [" ", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
+        }
     },
     "backlight": {
         "device": "DP-1",
         "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         "on-click": "",
     },
     "network": {
@@ -87,7 +123,6 @@
         "on-click": "nm-connection-editor",
         "format-disconnected": "Disconnected  ",
     },
-
     "wireplumber": {
         "format": "{icon} {volume}%",
         "format-bluetooth": "  {volume}%",
@@ -100,42 +135,40 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [
+                "",
+                "",
+                ""
+            ]
         },
         "on-click": "pavucontrol"
     },
-
-    // "bluetooth": {
-    //     "on-click": "~/.config/waybar/scripts/rofi-bluetooth &",
-    //     "format": " {status}",
-    // },
-
     "battery": {
-      "bat": "BAT1",
-      "adapter": "ADP0",
-      "interval": 5,
-      "states": {
-          "warning": 30,
-          "critical": 15
-      },
-      //"max-length": 20,
-      "format": "{icon} {capacity}%",
-      "format-warning": "{icon} {capacity}%",
-      "format-critical": "{icon} {capacity}%",
-      "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
-      "format-plugged": " {capacity}%",
-      "format-alt": "{icon} {time}",
-      "format-full": " {capacity}%",
-      "format-icons": [" ", " ", " ", " ", " "],
+        "bat": "BAT1",
+        "adapter": "ADP0",
+        "interval": 5,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        //"max-length": 20,
+        "format": "{icon} {capacity}%",
+        "format-warning": "{icon} {capacity}%",
+        "format-critical": "{icon} {capacity}%",
+        "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-full": " {capacity}%",
+        "format-icons": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
     },
-
-    // "custom/power-menu": {
-    //     "format": " <span> </span>",
-    //     "on-click": "bash ~/.config/waybar/scripts/powermenu.sh",
-    // }, 
     "custom/launcher": {
         "format": "<span >󰣇</span>",
         "on-click": "rofi -show drun",
     },
 }
-
