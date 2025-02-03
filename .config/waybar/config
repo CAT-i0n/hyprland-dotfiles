@@ -4,7 +4,7 @@
     "margin-left": 5,
     "margin-bottom": 0,
     "margin-right": 5,
-    "position" : "top",
+    "position": "top",
     "layer": "top",
     "spacing": 3, // Gaps between modules (4px)
     "modules-left": [
@@ -28,6 +28,7 @@
         "custom/power-menu"
     ],
     "hyprland/workspaces": {
+        // "format": "{name}> {windows}",
         "format": "{name} {icon}",
         "on-click": "activate",
         "format-icons": {
@@ -45,7 +46,18 @@
             "active": "󰪥 ",
             "default": "󰪥 ",
         },
-        "sort-by-number": true
+        "sort-by-number": true,
+        "window-rewrite-default" : "",
+        "window-rewrite" : {
+          "code" : "󰨞",
+          "firefox" : "",
+          "chromium" : "",
+          "foot" : "",
+          "org.telegram.desktop" : "",
+          "steam" : "",
+          "vlc" : "󰕼",
+          "evince" : "",
+        },
     },
     "hyprland/window": {
         "format": "{}"
@@ -54,6 +66,7 @@
         "spacing": 10
     },
     "clock": {
+        //"timezone": "Europe/Moscow",
         "format": "<span color='#bf616a'></span>{:%H:%M %b %d}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "locale": "en_GB.UTF-8",
@@ -99,7 +112,8 @@
         },
         "status-icons": {
             "paused": "🎵",
-        }
+        },
+        "interval" : 1
     },
     "backlight": {
         "device": "DP-1",

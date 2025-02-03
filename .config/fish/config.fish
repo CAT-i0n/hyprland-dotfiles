@@ -6,3 +6,6 @@ if status is-login
         exec Hyprland && swaylock
     end
 end
+
+set fish_greeting
+

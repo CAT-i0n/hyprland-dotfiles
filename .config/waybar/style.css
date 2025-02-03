@@ -15,7 +15,9 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 5 5px;
+  padding: 5px 5px 5px 5px;
+  /* margin-right: 5px; */
+  padding-right: 5px;
   color: #74a3d6;
   background-color: transparent;
   /* Use box-shadow instead of border so the text isn't offset */
@@ -26,11 +28,11 @@ window#waybar {
 }
 
 #workspaces button.focused {
-  color: #7961bf;
+  color: #4d74c9;
 }
 
 #workspaces button.active {
-  color: #74cfd6;
+  color: #a5eaef;
 }
 
 #workspaces button.urgent {
@@ -48,12 +50,16 @@ window#waybar {
 #wireplumber,
 #custom-media,
 #tray,
-#custom-weather.default {
+#custom-launcher {
   padding: 0 10px;
   color: #e5e5e5;
   /* color: #bf616a; */
-  background-color: #271f30;
+  background-color: rgba(39, 31, 48, 0.6);
   font-size: 18px;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: #e5e5e5;
+  border-radius: 5px; */
 }
 
 #mpris {
@@ -63,7 +69,7 @@ window#waybar {
 
 #workspaces {
   margin: 0 0px;
-  background-color: #271f30;
+  background-color: rgba(39, 31, 48, 0.6);
 }
 
 #memory,
@@ -74,22 +80,21 @@ window#waybar {
   color: #74d3d6;
 }
 
-#custom-launcher{
+#custom-launcher {
   min-height: 0;
   color: #00f2ff;
-  background-color: #271f30;
-  border-color: #08008c;
+  background-color: rgba(39, 31, 48, 0.6);
   font-size: 25px;
   padding: 0 13 0 8;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
   margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
   margin-right: 0;
 }
 
