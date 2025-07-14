@@ -3,8 +3,8 @@ daemonize
 hide-keyboard-layout
 clock
 #screenshot
-effect-blur=4x2
-image=/home/cati0n/Pictures/Wallpaper/hypr_wall.png 
+effect-blur=2x2
+image=~/Pictures/Wallpaper/space.jpg
 #effect-pixelate = 0.1
 #effect-scale = 2
 #effect-vignette=0.5:0.5
