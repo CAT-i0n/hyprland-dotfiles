@@ -1,0 +1,88 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "http.proxySupport": "on",
+    "git.openRepositoryInParentFolders": "never",
+    "files.exclude": {
+        "**/.git": false
+    },
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "python.defaultInterpreterPath": "/home/cati0n/.virtualenvs/common/bin/python",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 2
+    },
+    "files.autoSave": "afterDelay",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never",
+    "window.zoomLevel": 1.3,
+    "window.titleBarStyle": "custom",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "git.suggestSmartCommit": false,
+    "cmake.configureOnOpen": true,
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.showOptionsMovedNotification": false,
+    "githubPullRequests.pullBranch": "never",
+    "explorer.confirmDelete": false,
+    "clangd.detectExtensionConflicts": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "customWindowZoom.zoomLevelChangeValue": 0.1,
+    "clang-format.fallbackStyle": "Visual Studio",
+    "workbench.colorCustomizations": {
+        "editor.background": "#393939",
+        "sideBar.background": "#313133",
+    },
+    "editor.tokenColorCustomizations": {
+        "strings": "#5eff00",
+        "variables": "#ffffff",
+        "comments": "#57c131",
+        "functions": "#fdff77",
+        "keywords": "#00e1e5",
+        "types": "#9acdff",
+        "textMateRules": [
+            {
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#ffffff",
+                }
+            },
+            {
+                "scope": "entity.name.namespace",
+                "settings": {
+                    "foreground": "#85caff",
+                }
+            },
+            {
+                "scope": "variable.other.property",
+                "settings": {
+                    "foreground": "#ffffff",
+                }
+            }
+        ]
+        
+    },
+    "autopep8.args": [
+        "--max-line-length",
+        "120",
+        "--experimental"
+    ],
+    "terminal.integrated.inheritEnv": true,
+    "glassit.alpha": 100,
+    "glassit-linux.opacity": 50
+}
