@@ -3,7 +3,7 @@ if status is-interactive
 end
 if status is-login
     if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
-        exec Hyprland && swaylock
+        # exec swaylock
     end
 end
 
