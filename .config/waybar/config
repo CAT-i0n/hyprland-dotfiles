@@ -133,7 +133,7 @@
     },
     "network": {
         "format-wifi": "󰖩 {signalStrength}%",
-        "format-ethernet": " wired",
+        "format-ethernet": "󰈀 wired",
         "on-click": "nm-connection-editor",
         "format-disconnected": "Disconnected  ",
     },
